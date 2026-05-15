@@ -1,83 +1,351 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Spin-off of "Project: Event invite"</title>
-        <style>
-            body {
-                background-color: #eeeeee;
-                font-family: Arial, sans-serif;
-                margin-top: 50px;
-            }
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            .container {
-                background-color: white;
-                width: 350px;
-                margin: 0 auto;
-                padding: 20px;
-                border: 2px solid #3b82f6;
-            }
+<title>AC Milan Fan Page</title>
 
-            h1 {
-                text-align: center;
-                color: #1e3a8a;
-                font-size: 24px;
-                text-transform: uppercase;
-                margin-bottom: 30px;
-            }
+<style>
 
-            .row {
-                margin-bottom: 15px;
-                padding-bottom: 5px;
-                border-bottom: 1px solid #dddddd;
-            }
+body{
+    font-family:Arial;
+    background:#111;
+    color:white;
+}
+header{
+    text-align:center;
+    padding:30px;
+    background:black;
+    border-bottom:3px solid red;
+}
 
-            .label {
-                font-weight: bold;
-                color: #3b82f6;
-                font-size: 12px;
-                display: block;
-            }
+header h1{
+    font-size:50px;
+    color:red;
+}
 
-            .value {
-                font-size: 16px;
-                display: block;
-                margin-top: 5px;
-            }
+header p{
+    margin-top:10px;
+    font-size:20px;
+}
 
-            .guest-list {
-                margin-top: 30px;
-                font-style: italic;
-                text-align: center;
-                color: #777777;
-                font-size: 13px;
-            }
-        </style>
-    </head>
-    <body>
+nav{
+    margin-top:20px;
+}
 
-        <div class="container">
-            <h1>Invitation</h1>
+nav a{
+    color:white;
+    margin:15px;
+    font-size:20px;
+}
 
-            <div class="row">
-                <span class="label">EVENT</span>
-                <span class="value">Birthday Party</span>
-            </div>
+.container{
+    width:85%;
+    margin:40px auto;
+    background:#1b1b1b;
+    padding:25px;
+    border-radius:20px;
+    border:2px solid red;
+}
 
-            <div class="row">
-                <span class="label">DATE</span>
-                <span class="value">May 29, 18:00</span>
-            </div>
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:red;
+}
 
-            <div class="row">
-                <span class="label">LOCATION</span>
-                <span class="value">Karaganda, Kazakhstan</span>
-            </div>
+.image-box{
+    text-align:center;
+}
 
-            <div class="guest-list">
-                Guests: Alikh, Rasul, Abu, and others.
-            </div>
-        </div>
+.image-box img{
+    width:250px;
+    border-radius:20px;
+    border:3px solid red;
+}
 
-    </body>
+.about-text{
+    margin-top:20px;
+    text-align:center;
+    font-size:20px;
+    line-height:1.7;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th{
+    background:red;
+    color:black;
+}
+
+th, td{
+    border:1px solid white;
+    padding:10px;
+    text-align:center;
+}
+
+.buttons{
+    text-align:center;
+}
+
+input{
+    width:250px;
+    padding:10px;
+    border:none;
+    border-radius:15px;
+    margin-top:15px;
+}
+
+button{
+    padding:10px 15px;
+    margin:10px;
+    border:none;
+    border-radius:15px;
+    background:red;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:white;
+    color:black;
+}
+
+#hiddenText{
+    display:none;
+    margin-top:20px;
+    font-size:25px;
+    color:red;
+}
+
+footer{
+    text-align:center;
+    background:black;
+    padding:20px;
+    margin-top:40px;
+    border-top:3px solid red;
+}
+
+.dark{
+    background:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1 id="titleText">AC Milan</h1>
+
+<p>Football Club Fan Page</p>
+
+<nav>
+
+<a href="#about">About</a>
+<a href="#players">Players</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="container" id="about">
+
+<h2>About Me</h2>
+
+<div class="image-box">
+
+<a href="https://ibb.co.com/wNqjfQ1k"><img src="https://i.ibb.co.com/Fb1CFYtr/1000003411.jpg" alt="1000003411" border="0" /></a>
+
+</div>
+
+<p class="about-text">
+
+My name is Bibarys and I'm fan of AC Milan!
+Welcome to my page about Milan
+
+</p>
+
+</section>
+
+<section class="container" id="players">
+
+<h2>Favorite Players</h2>
+<table>
+
+<tr>
+<th>#</th>
+<th>Player</th>
+<th>Position</th>
+<th>Country</th>
+<th>Number</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Rafael Leão</td>
+<td>Forward</td>
+<td>Portugal</td>
+<td>10</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Theo Hernández</td>
+<td>Defender</td>
+<td>France</td>
+<td>19</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Mike Maignan</td>
+<td>Goalkeeper</td>
+<td>France</td>
+<td>16</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Christian Pulisic</td>
+<td>Winger</td>
+<td>USA</td>
+<td>11</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>Fikayo Tomori</td>
+<td>Defender</td>
+<td>England</td>
+<td>23</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>Ismaël Bennacer</td>
+<td>Midfielder</td>
+<td>Algeria</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>Samuel Chukwueze</td>
+<td>Winger</td>
+<td>Nigeria</td>
+<td>21</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>Yunus Musah</td>
+<td>Midfielder</td>
+<td>USA</td>
+<td>80</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>Davide Calabria</td>
+<td>Defender</td>
+<td>Italy</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>Tijjani Reijnders</td>
+<td>Midfielder</td>
+<td>Netherlands</td>
+<td>14</td>
+</tr>
+
+</table>
+
+</section>
+
+
+<section class="container" id="contact">
+
+<h2>Fan Zone</h2>
+
+<div class="buttons">
+
+<input
+type="text"
+id="userName"
+placeholder="Enter your name">
+
+<br>
+
+<button onclick="welcomeUser()">
+Welcome
+</button>
+
+<button onclick="showText()">
+Show Text
+</button>
+
+<button onclick="darkMode()">
+Light Mode
+</button>
+
+<p id="hiddenText">
+❤️🖤 FORZA MILAN ❤️🖤
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>2026 © AC Milan Fan Page</p>
+
+</footer>
+
+<script>
+
+function welcomeUser(){
+
+let name =
+document.getElementById("userName").value;
+
+if(name === ""){
+    alert("Please enter your name!");
+}
+else{
+    document.getElementById("titleText").innerHTML =
+"Welcome, " + name + "!";
+
+alert("Welcome " + name + "!");
+
+}
+
+}
+
+function showText(){
+
+document.getElementById("hiddenText").style.display =
+"block";
+
+}
+
+function darkMode(){
+
+document.body.classList.toggle("dark");
+
+}
+
+</script>
+
+</body>
 </html>
